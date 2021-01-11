@@ -2,14 +2,24 @@
 #include <vector>
 #include <string>
 
+/**
+ * @author Abhinav Robinson
+ * 
+ * @param main {function} A simple hello world program
+ * @param msg {vector > string} Message to be printed
+ * 
+ * @returns 0 {integer}
+ */
 int main()
 {
-    std::vector<std::string> msg{"Hello", "World", "!"};
+    /** @private */ std::vector<std::string> msg{"Hello", "World", "!"};
 
     for (const std::string &word : msg)
     {
         std::cout << word << " ";
     }
-    
+
     std::cout << std::endl;
+
+    return 0;
 }
