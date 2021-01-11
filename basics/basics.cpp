@@ -73,6 +73,13 @@ int main(int argc, char **argv)
 
     printf("Sum = %.16f\n", (dx + dy)); // Sum = 2.2222222222222223 << lost precision
 
+    /** @see we can also let the compiler decide the type */
+    auto guessType = true;
+    std::cout << "auto assigned bool (b) : " << typeid(guessType).name() << std::endl;
+
+    /** Every type has different bite size */
+    std::cout << "int byte size : " << sizeof(int) << std::endl;
+
     /** @return 0 {integer}, standard output for main signals successful run */
     return 0;
 }
