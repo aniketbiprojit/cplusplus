@@ -6,7 +6,6 @@
  * @author Abhinav Robinson
  * 
  * @param main {function} A simple hello world program
- * @param msg {vector > string} Message to be printed
  * 
  * @returns 0 {integer}
  */

@@ -8,7 +8,6 @@
 #include <ctime>
 #include <cmath>
 
-
 /** 
  * @see I will be avoiding declaring namespaces
  * 
@@ -16,17 +15,15 @@
  * ` using namespace std; `
  */
 
-
-/** Global Variable */ int globalVar = 0;
-/** Constant Variable */ const double PI = 3.141;
-
+/* Global */ int globalVar = 0;
+/* Constant */ const double PI = 3.141;
 
 /**  
  * This is our main function, and is run everytime we run the program
  * @param argc number of args passed in main
  * @param argv array of pointers to strings
  *  
- * @returns {int}
+ * @returns 0 {integer}
  */
 int main(int argc, char **argv)
 {
