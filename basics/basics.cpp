@@ -8,13 +8,26 @@
 #include <ctime>
 #include <cmath>
 
-/** I will be avoiding declaring namespaces
+
+/** 
+ * @see I will be avoiding declaring namespaces
  * 
  * You can add this code below and remove all std:: declarations
  * ` using namespace std; `
- * 
  */
 
+
+/** Global Variable */ int globalVar = 0;
+/** Constant Variable */ const double PI = 3.141;
+
+
+/**  
+ * This is our main function, and is run everytime we run the program
+ * @param argc number of args passed in main
+ * @param argv array of pointers to strings
+ *  
+ * @returns {int}
+ */
 int main(int argc, char **argv)
 {
     std::cout << "Welcome to the basics file." << std::endl;
