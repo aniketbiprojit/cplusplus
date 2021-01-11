@@ -65,6 +65,14 @@ int main(int argc, char **argv)
     /** @param printf provides printing with formatting */
     printf("Sum = %.7f\n", (fx + fy)); // Sum = 2.2222221 << lost precision
 
+    /**
+     * @see doubles are accurate upto 16 decimal places
+    */
+    double dx = 1.1111111111111111;
+    double dy = 1.1111111111111111;
+
+    printf("Sum = %.16f\n", (dx + dy)); // Sum = 2.2222222222222223 << lost precision
+
     /** @return 0 {integer}, standard output for main signals successful run */
     return 0;
 }
