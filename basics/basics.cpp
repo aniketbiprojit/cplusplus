@@ -18,6 +18,17 @@
 /** Global int */ int globalVar = 0;
 /** Constant global double */ const double PI = 3.141;
 
+/**
+ * Let there be comments. 
+ */
+template <typename T>
+void print_min_max(std::string name)
+{
+    std::cout << "Min :" << name << " > " << std::numeric_limits<T>::min() << std::endl;
+    std::cout << "Max :" << name << " > " << std::numeric_limits<T>::max() << std::endl;
+    return;
+}
+
 /**  
  * This is our main function, and is run everytime we run the program.
  * @param argc number of args passed in main
@@ -35,26 +46,19 @@ int main(int argc, char **argv)
     /**
      * @see now we print the min max of the most commanly used datatypes
     */
-    std::cout << "Min : (unsigned) short int > " << std::numeric_limits<unsigned short int>::min() << std::endl;
-    std::cout << "Max : (unsigned) short int > " << std::numeric_limits<unsigned short int>::max() << std::endl;
+    print_min_max<unsigned short int>("(unsigned) short int");
 
-    std::cout << "Min : short int > " << std::numeric_limits<short int>::min() << std::endl;
-    std::cout << "Max : short int > " << std::numeric_limits<short int>::max() << std::endl;
+    print_min_max<unsigned short int>("(unsigned) short int");
 
-    std::cout << "Min : int > " << std::numeric_limits<int>::min() << std::endl;
-    std::cout << "Max : int > " << std::numeric_limits<int>::max() << std::endl;
+    print_min_max<int>("int");
 
-    std::cout << "Min : long > " << std::numeric_limits<long>::min() << std::endl;
-    std::cout << "Max : long > " << std::numeric_limits<long>::max() << std::endl;
+    print_min_max<long>("long");
 
-    std::cout << "Min : float > " << std::numeric_limits<float>::min() << std::endl;
-    std::cout << "Max : float > " << std::numeric_limits<float>::max() << std::endl;
+    print_min_max<float>("float");
 
-    std::cout << "Min : double > " << std::numeric_limits<double>::min() << std::endl;
-    std::cout << "Max : double > " << std::numeric_limits<double>::max() << std::endl;
+    print_min_max<double>("double");
 
-    std::cout << "Min : long double > " << std::numeric_limits<long double>::min() << std::endl;
-    std::cout << "Max : long double > " << std::numeric_limits<long double>::max() << std::endl;
+    print_min_max<long double>("double");
 
     /**
      * @see floats are accurate upto 6 decimal places
