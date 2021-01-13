@@ -18,6 +18,9 @@
 /** Global int */ int globalVar = 0;
 /** Constant global double */ const double PI = 3.141;
 
+/**
+ * Let there be comments. 
+ */
 template <typename T>
 void print_min_max(std::string name)
 {
