@@ -24,8 +24,8 @@
 template <typename T>
 void print_min_max(std::string name)
 {
-    std::cout << "Min :" << name << " > " << std::numeric_limits<unsigned short int>::min() << std::endl;
-    std::cout << "Max :" << name << " > " << std::numeric_limits<unsigned short int>::max() << std::endl;
+    std::cout << "Min :" << name << " > " << std::numeric_limits<T>::min() << std::endl;
+    std::cout << "Max :" << name << " > " << std::numeric_limits<T>::max() << std::endl;
     return;
 }
 
